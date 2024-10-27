@@ -1,0 +1,98 @@
+<products>
+  <product id="11">
+  <name> Samsung </name>
+  <unit_price> 35000 </unit_price>
+  <stock> 50 </stock>
+  <status> 1 </status>
+  </product>
+
+  <product id="20">
+  <name> HTC </name>
+  <unit_price> 65300 </unit_price>
+  <stock> 35 </stock>
+  <status> 0 </status>
+  </product> 
+
+  <product id="23">
+  <name> Nokia </name>
+  <unit_price> 25100 </unit_price>
+  <stock> 100 </stock>
+  <status> 1 </status>
+  </product>
+
+</products>
+<admissons>
+  <admisson sl="23">
+  <first_name> John </first_name>
+  <last_name> Carter </last_name>
+  <admisson_date> 
+   <day>25</day>
+   <month>12</month>
+   <year>2015</year>
+  </admisson_date>
+  </admisson>
+  
+  <admisson sl="29">
+  <first_name> Bob </first_name>
+  <last_name> Marshal </last_name>
+  <admisson_date> 
+   <day>13</day>
+   <month>1</month>
+   <year>1999</year>
+  </admisson_date>
+  </admisson>
+
+  <admisson sl="35">
+  <first_name> Clark </first_name>
+  <last_name> Kent </last_name>
+  <admisson_date> 
+   <day>17</day>
+   <month>6</month>
+   <year>2005</year>
+  </admisson_date>
+  </admisson>
+</admissons>
+
+<details>
+  <details_0 id="1">
+  <first_name> John </first_name>
+  <last_name> Doe </last_name>
+  <address>
+  <flat></flat>
+  <house_no>38</house_no>
+  <road_no>3</road_no>
+  <area>Banani</area>
+  <distric>Dhaka</distric>
+  </address>
+  <department>Sales</department>
+  <salary>$20000</salary>
+  </detail_0>
+
+  <details_0 id="2">
+  <first_name> Mark </first_name>
+  <last_name> Zuckerberg </last_name>
+  <address>
+  <flat>A/3</flat>
+  <house_no></house_no>
+  <road_no>3</road_no>
+  <area>Mirpur</area>
+  <distric>Dhaka</distric>
+  </address>
+  <department>Accounts</department>
+  <salary>$12000</salary>
+  </detail_0>
+
+  <details_0 id="3">
+  <first_name> Ala </first_name>
+  <last_name> Voski </last_name>
+  <address>
+  <flat></flat>
+  <house_no>38</house_no>
+  <road_no>3</road_no>
+  <area>Motijheel</area>
+  <distric></distric>
+  </address>
+  <department>Human Resourse </department>
+  <salary>$30000</salary>
+  </detail_0>
+</details>
