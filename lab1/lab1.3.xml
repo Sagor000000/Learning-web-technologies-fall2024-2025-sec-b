@@ -1,0 +1,43 @@
+<details>
+  <details_0 id="1">
+  <first_name> John </first_name>
+  <last_name> Doe </last_name>
+  <address>
+  <flat></flat>
+  <house_no>38</house_no>
+  <road_no>3</road_no>
+  <area>Banani</area>
+  <distric>Dhaka</distric>
+  </address>
+  <department>Sales</department>
+  <salary>$20000</salary>
+  </detail_0>
+
+  <details_0 id="2">
+  <first_name> Mark </first_name>
+  <last_name> Zuckerberg </last_name>
+  <address>
+  <flat>A/3</flat>
+  <house_no></house_no>
+  <road_no>3</road_no>
+  <area>Mirpur</area>
+  <distric>Dhaka</distric>
+  </address>
+  <department>Accounts</department>
+  <salary>$12000</salary>
+  </detail_0>
+
+  <details_0 id="3">
+  <first_name> Ala </first_name>
+  <last_name> Voski </last_name>
+  <address>
+  <flat></flat>
+  <house_no>38</house_no>
+  <road_no>3</road_no>
+  <area>Motijheel</area>
+  <distric></distric>
+  </address>
+  <department>Human Resourse </department>
+  <salary>$30000</salary>
+  </detail_0>
+</details>
