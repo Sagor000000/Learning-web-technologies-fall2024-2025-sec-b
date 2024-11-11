@@ -1,0 +1,31 @@
+<admissons>
+  <admisson sl="23">
+  <first_name> John </first_name>
+  <last_name> Carter </last_name>
+  <admisson_date> 
+   <day>25</day>
+   <month>12</month>
+   <year>2015</year>
+  </admisson_date>
+  </admisson>
+  
+  <admisson sl="29">
+  <first_name> Bob </first_name>
+  <last_name> Marshal </last_name>
+  <admisson_date> 
+   <day>13</day>
+   <month>1</month>
+   <year>1999</year>
+  </admisson_date>
+  </admisson>
+
+  <admisson sl="35">
+  <first_name> Clark </first_name>
+  <last_name> Kent </last_name>
+  <admisson_date> 
+   <day>17</day>
+   <month>6</month>
+   <year>2005</year>
+  </admisson_date>
+  </admisson>
+</admissons>
