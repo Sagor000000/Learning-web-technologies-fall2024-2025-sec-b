@@ -1,0 +1,73 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Profile</title>
+</head>
+<body>
+
+<form>
+    <table border="1">
+        <tr>
+            <th colspan="2">PERSON PROFILE</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="name" required></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="email" required></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+            </td>
+        </tr>
+        <tr>
+            <td>Date of Birth</td>
+            <td><input type="date" name="dob" required></td>
+        </tr>
+        <tr>
+            <td>Blood Group</td>
+            <td>
+                <select name="blood_group">
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Degree</td>
+            <td>
+                <input type="checkbox" name="degree" value="SSC"> SSC
+                <input type="checkbox" name="degree" value="HSC"> HSC
+                <input type="checkbox" name="degree" value="BSc"> B.Sc.
+                <input type="checkbox" name="degree" value="MSc"> M.Sc.
+            </td>
+        </tr>
+        <tr>
+            <td>Photo</td>
+            <td><input type="file" name="photo" accept="image/*"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
