@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Date of Birth Validation</title>
+</head>
+<body>
+    <h2>Date of Birth Validation Form</h2>
+    <form action="validateDob.php" method="post">
+        <fieldset>
+            <legend>Date of Birth</legend>
+            <table align="center" width="50%">
+                <tr>
+                    <td><strong>Day (dd):</strong></td>
+                    <td><input type="text" name="day" placeholder="dd" maxlength="2" /></td>
+                </tr>
+                <tr>
+                    <td><strong>Month (mm):</strong></td>
+                    <td><input type="text" name="month" placeholder="mm" maxlength="2" /></td>
+                </tr>
+                <tr>
+                    <td><strong>Year (yyyy):</strong></td>
+                    <td><input type="text" name="year" placeholder="yyyy" maxlength="4" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <br>
+                        <input type="submit" value="Submit" />
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
