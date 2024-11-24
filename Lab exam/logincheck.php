@@ -1,28 +1,38 @@
 <?php
-    session_start();
+session_start();
 
-    if(isset($_POST['submit'])){
-        //echo "Test";
-        //print_r($_GET)
-        //$username = $_GET['username'];
-        $username = trim($_POST['username']);
-        $password = trim($_POST['password']);
-        //$username = $_REQUEST['username'];
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $username = trim($_POST['username']);
+    $password = $_POST['password'];
 
-        //echo "Your username is: ". $username;
-        //echo "Your username is: {$username}";
-
-        if($username == null || empty($password)){
-            echo "Null username/password";
-        }else if($username == $password){
-            //echo "valid user!";
-
-            $_SESSION['xyz'] = true;
-            header('location: home.php');
-        }else{
-            echo "Invalid user!";
-        }
-    }else{
-        header('location: login.html');
+    // Validate inputs
+    if (empty($username) || empty($password)) {
+        echo "Both fields are required.";
+        exit;
     }
+
+    // File to store user data
+    $file = 'users.json';
+
+    // Read existing users from file
+    if (!file_exists($file)) {
+        echo "No users registered.";
+        exit;
+    }
+
+    $users = json_decode(file_get_contents($file), true);
+
+    // Check if username/email exists and password matches
+    foreach ($users as $user) {
+        if (($user['username'] === $username || $user['email'] === $username) &&
+            password_verify($password, $user['password'])) {
+            $_SESSION['user_id'] = $user['username'];
+            header("Location:home.php");
+            exit;
+        }
+    }
+
+    echo "Invalid username/email or password.";
+    exit;
+}
 ?>
