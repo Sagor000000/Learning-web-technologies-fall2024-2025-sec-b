@@ -1,78 +1,55 @@
-<html lang="en">
-<head>
-    <title>HTML Form</title>
-</head>
-<body>
-        <h1>HTML FROM EXAMPLE</h1>
+<?php
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $username = trim($_POST['username']);
+    $email = trim($_POST['email']);
+    $password = $_POST['password'];
+    $confirm_password = $_POST['confirm_password'];
 
-        <form action="test1.html">
-            <fieldset >
-                <legend>Signup</legend>
-                <table>
-                    <tr>
-                        <td>Name:</td>
-                        <td><input type="text" name="" value="" placeholder="type your name" /></td>
-                    </tr>
-                    <tr>
-                        <td>ID:</td>
-                        <td><input type="number"  name="" value="" /></td>
-                    </tr>
-                    <tr>
-                        <td>Email: </td>
-                        <td><input type="email" name="" value="" /></td>
-                    </tr>
-                    <tr>
-                        <td>password:</td>
-                        <td><input type="password" name="" value="" /></td>
-                    </tr>
-                    <tr>
-                        <td>DOB:</td>
-                        <td><input type="date" name="" value="" /></td>
-                    </tr>
-                    <tr>
-                        <td>Gender:</td>
-                        <td>
-                            <input type="radio" name="abc"  value=""> Male  
-                            <input type="radio" name="abc"  value=""> female  
-                            <input type="radio" name="abc"  value=""> Other
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>TEst:</td>
-                        <td>
-                            <input type="checkbox" name="abc[]" value=""> OPT-1
-                            <input type="checkbox" name="abc[]" value=""> OPT-1
-                            <input type="checkbox" name="abc[]" value=""> OPT-1 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Dept:</td>
-                        <td>
-                            <select name="">
-                                <option value="">CSE</option>
-                                <option value="">CS</option>
-                                <option value="">SE</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Address: </td>
-                        <td><textarea></textarea> </td>
-                    </tr>
-                    <tr>
-                        <td>Image:</td>
-                        <td><input type="file" name="" value="" /></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <input type="button" name="" value="Click" /> 
-                            <input type="submit" name="" value="Submit"  />
-                            <input type="reset" name="" value="Rest"  />
-                        </td>
-                    </tr>
-                </table>
-        </fieldset>     
-        </form> 
-</body>
-</html>
+    // Validate inputs
+    if (empty($username) || empty($email) || empty($password) || empty($confirm_password)) {
+        echo "All fields are required.";
+        exit;
+    }
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format.";
+        exit;
+    }
+
+    if ($password !== $confirm_password) {
+        echo "Passwords do not match.";
+        exit;
+    }
+
+    // File to store user data
+    $file = 'users.json';
+
+    // Read existing users from file
+    $users = file_exists($file) ? json_decode(file_get_contents($file), true) : [];
+
+    // Check if username or email exists
+    foreach ($users as $user) {
+        if ($user['username'] === $username || $user['email'] === $email) {
+            echo "Username or email already exists.";
+            exit;
+        }
+    }
+
+    // Hash the password
+    $hashed_password = password_hash($password, PASSWORD_BCRYPT);
+
+    // Add new user to the array
+    $users[] = [
+        'username' => $username,
+        'email' => $email,
+        'password' => $hashed_password
+    ];
+
+    // Save users back to the file
+    file_put_contents($file, json_encode($users));
+
+    // Redirect to login page
+    header("Location: login.html");
+    exit;
+}
+?>
