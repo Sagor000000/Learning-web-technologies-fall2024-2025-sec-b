@@ -15,9 +15,9 @@ function login($username, $password){
 }
 
 
-function createUser($username, $password, $email, $dob, $phone, $gender, $blood_group) {
+function createUser($name, $tel, $username, $password) {
     $con = dbConnect();
-    $sql = "INSERT INTO user (username, password, email, dob, phone, gender, blood_group) VALUES ('$username', '$password', '$email', '$dob', '$phone', '$gender', '$blood_group')";
+    $sql = "INSERT INTO user (name, tel, username, password) VALUES ('$name', '$tel', '$username', '$password')";
     
     if(mysqli_query($con, $sql)) {
         return true;
