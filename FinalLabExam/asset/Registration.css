@@ -1,0 +1,70 @@
+body{
+    font-family: Arial, sans-serif;
+}
+/* Styling for the container */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+
+/* Styling for the fieldset */
+fieldset {
+    padding: 20px;
+    border: 2px solid #59D5E0;
+    border-radius: 10px;
+    background-color:white;
+    width: 350px; /* Increased width */
+    margin: 0 auto; /* Center the fieldset */
+}
+
+/* Styling for the profile title */
+.profile-title {
+    text-align: center;
+}
+
+/* Styling for custom input fields */
+.custom-field {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styling for radio buttons */
+input[type="radio"] {
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+/* Styling for submit button */
+.login-button {
+    width: 50%;
+    background-color: #59D5E0;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-left:25px;
+}
+
+/* Hover effect for submit button */
+.login-button:hover {
+    background-color: #4fa9b8;
+}
+
+/* Styling for forgot password link */
+.forgot-password {
+    color: #59D5E0;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Hover effect for forgot password link */
+.forgot-password:hover {
+    text-decoration: underline;
+}
