@@ -1,0 +1,63 @@
+body{
+background-image: url('../view/LoginPagePhoto.png'); 
+background-size: cover;   
+}
+
+
+
+fieldset {
+position: absolute; 
+top: 45px; 
+left: 40%; 
+width: 300px; 
+padding: 20px; 
+margin: 50px auto 0; 
+border: 2px solid #59D5E0;
+border-radius: 10px; 
+background-color: #fff;  
+
+}
+
+
+.profile-title {
+text-align: center;
+}
+
+
+
+.custom-input {
+
+padding: 8px;
+margin-bottom: 5px; 
+border: 1px solid #ccc; 
+border-radius: 5px; 
+
+}
+
+
+.login-button {
+background-color: #59D5E0; 
+color: #fff; 
+border: none; 
+border-radius: 5px;
+padding: 10px 20px;
+
+}
+
+
+.login-button:hover {
+background-color: #4fa9b8;
+}
+
+
+.forgot-password {
+color: #59D5E0; 
+text-decoration: none; 
+margin-left: 10px; 
+
+}
+
+
+.forgot-password:hover {
+text-decoration: underline; 
+}

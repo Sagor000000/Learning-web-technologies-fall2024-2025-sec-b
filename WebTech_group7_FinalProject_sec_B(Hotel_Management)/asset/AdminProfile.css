@@ -1,0 +1,67 @@
+
+
+body {
+    background-image: url('../view/ProfilePagePhoto.png'); 
+    background-size: cover; 
+    font-family: Arial, sans-serif; 
+}
+
+
+fieldset {
+    background-color: #59D5E0;
+    width: 30%; 
+    margin: 2px auto; 
+    padding: 20px; 
+    border-radius: 10px; 
+    border: 2px solid white; 
+}
+
+
+h1 {
+    text-align: center; 
+    color: black; 
+   
+    padding: 10px; 
+    border-radius: 5px; 
+    margin-bottom: 20px; 
+}
+
+.header {
+    padding: 15px 20px;
+}
+
+.home-button {
+    font-size: 20px;
+    width: 75px; 
+    height: 35px;  
+    border-radius: 10px;
+    border: 4px solid #59D5E0;
+    background-color: transparent; 
+    color: white; 
+  }
+
+  .home-button:hover{
+    background-color: #89CFF0 
+  }
+    
+
+
+img {
+    display: block; 
+    margin: 0 auto; 
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    border: 5px solid #fff; /
+}
+
+
+p {
+    text-align: center; 
+    margin-top: 10px; 
+}
+
+
+p strong {
+    color: black; 
+}

@@ -1,0 +1,53 @@
+
+body {
+    background-image: url('../view/dashbord3.jpg'); 
+    background-size: cover; 
+    font-family: Arial, sans-serif; 
+}
+
+
+fieldset {
+    background-color: #59D5E0;
+    width: 40%; 
+    margin: 95px; 
+    padding: 20px;
+    border-radius: 10px; 
+    border: 2px solid white; 
+}
+    
+
+
+table {
+    width: 100%; 
+}
+
+
+
+
+.choose-file-button {
+    padding: 8px; 
+    margin-bottom: 5px; 
+    margin-left: 15px; 
+    border: 1px solid white; 
+    border-radius: 5px; 
+    background-color: #fff; 
+}
+
+
+.upload-button {
+    background-color: #4fa9b8; 
+    color: black; 
+    border: none; 
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-top: 15px; 
+    margin-right: 10px;
+    margin-left: 70px;
+    
+    padding: 10px 20px; 
+}
+
+
+.upload-button:hover {
+    background-color: #388b9e;
+}

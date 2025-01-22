@@ -1,0 +1,59 @@
+
+
+body {
+    background-image: url('../view/ProfilePagePhoto.png'); 
+    background-size: cover; 
+    font-family: Arial, sans-serif; 
+}
+
+
+fieldset {
+    background-color: transparent;
+    width: 40%; 
+    margin: 50px auto;
+    padding: 20px; 
+    border-radius: 10px; 
+    border: 2px solid white; 
+}
+
+
+h1 {
+    padding: 10px; 
+    margin-bottom: 20px; 
+}
+
+.custom-input {
+
+    padding: 8px;
+    padding-left: 15px;
+    margin-bottom: 5px; 
+    margin-left: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    
+    }
+
+    
+   
+    .submit-button {
+    background-color: #59D5E0; 
+    font-size: 15px;
+    color: black; 
+    border: none;
+    border-radius: 5px; 
+    border: 1px solid white;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding: 8px 18px ;
+    
+    
+    }
+    
+    
+    .submit-button:hover {
+    background-color: #388b9e;
+    }
+
+
+  
+    
